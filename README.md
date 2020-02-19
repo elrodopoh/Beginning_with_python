@@ -6,3 +6,6 @@ Aqui puedes encontra un sytaxa de como utilizarlo. [basic-writing-and-formatting
 
 ## Como utilizar estos archivo_usuario
 Es buena practica editar este archivo y aqui explicar a los otros usuarios y para ti tambien, que es lo que se puede hacer y como se debe hacer.
+
+## Seguir estandar PEP8
+(PEP8)[https://www.python.org/dev/peps/pep-0008/] 
