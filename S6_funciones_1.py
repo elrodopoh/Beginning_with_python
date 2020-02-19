@@ -3,43 +3,50 @@ import os
 def mostrar_bienvenida():
     print("¡Bienvenido/a a la mas espectacular red social!:")
     print("""
-        ____            __       _____            _       __   _   __     __ 
+        ____            __       _____            _       __   _   __     __
        / __ \____  ____/ /___   / ___/____  _____(_)___ _/ /  / | / /__  / /_
       / /_/ / __ \/ __  / __ \  \__ \/ __ \/ ___/ / __ `/ /  /  |/ / _ \/ __/
-     / _, _/ /_/ / /_/ / /_/ / ___/ / /_/ / /__/ / /_/ / /  / /|  /  __/ /_  
+     / _, _/ /_/ / /_/ / /_/ / ___/ / /_/ / /__/ / /_/ / /  / /|  /  __/ /_
     /_/ |_|\____/\__,_/\____/ /____/\____/\___/_/\__,_/_/  /_/ |_/\___/\__/
-                                       
+
     ¡|(•◡•)|, (❍ᴥ❍ʋ), | |[•◡•]| Finn, Jake & BMO te dan la bienvenida!
     """)
 
 def obtener_nombre():
     nombre = input("Para empezar, dime como te llamas: ")
     return nombre
+
 def obtener_edad():
     agno = int(input("Para preparar tu perfil te hare unas breves preguntas, primero dime en que año naciste. "))
     edad = 2020 - agno - 1
     return edad
+
 def obtener_estatura():
     estatura = float(input("¿Cuanto mides? Ingresa los datos en metros. Ejemplo: 1.70 :   "))
     metros = int(estatura)
     centimetros = int( (estatura - metros)*100 )
     return (metros, centimetros)
+
 def obtener_sexo():
     sexo = input("Por favor, ingresa tu sexo (M=Masculino, F=Femenino): ")
     while sexo != 'M' and sexo != 'F':
         sexo = input("Por favor, ingresa tu sexo (M=Masculino, F=Femenino): ")
     return sexo
+
 def obtener_interes():
     interes = input("Estas interesado/a en conocer M=Mujeres, H=Hombres: ")
     while interes != 'M' and interes != 'H':
         interes = input("Estas interesado/a en conocer M=Mujeres, H=Hombres: ")
     return interes
+
 def obtener_pais():
     pais = input("Ahora dime de que país eres:  ")
     return pais
+
 def obtener_ciudad():
     ciudad = input("Tambien tu ciudad natal:  ")
     return ciudad
+
 def obtener_lista_amigos():
     linea = input("Finalmente, escribe una lista con los nombres de tus amigos, separados por una ',': ")
     amigos = linea.split(",")
