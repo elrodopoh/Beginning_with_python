@@ -71,7 +71,7 @@ while opcion != 0:
 
     elif opcion == 6:
         amigos.append(input("¿Que amigo deseas agregar a tu lista? "))
-        Red.escribir_usuario(amigos)
+        #Red.escribir_usuario(amigos) # Te faltan varaibles en esta llamada de funcion
         print("---------------- LISTA DE AMIGOS -----------------")
         print(*amigos, sep='\n')
         print("--------------------------------------------------")
